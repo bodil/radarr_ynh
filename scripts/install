@@ -54,7 +54,7 @@ ynh_multimedia_addaccess $app
 ynh_script_progression "Starting $app's systemd service..."
 
 # Start a systemd service
-ynh_systemctl --service=$app --action="start" --log_path="systemd" --wait_until="Application started" --timeout=30
+ynh_systemctl --service=$app --action="start" --log_path="systemd" --wait_until="Application started" --timeout=600
 
 #=================================================
 # END OF SCRIPT
